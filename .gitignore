@@ -106,3 +106,4 @@ test/metastore
 metastore_db
 cmake-build-debug
 .idea
+.idea/vcs.xml
