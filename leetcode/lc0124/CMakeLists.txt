@@ -1,0 +1,1 @@
+add_executable(lc0124 solution.cpp)
