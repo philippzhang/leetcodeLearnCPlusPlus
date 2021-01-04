@@ -3,6 +3,5 @@ project(leetcodeLearnCPlus)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcodeLearnCPlus main.cpp)
 add_subdirectory(base)
 add_subdirectory(leetcode)

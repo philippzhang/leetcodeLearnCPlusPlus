@@ -1,8 +1,3 @@
-cmake_minimum_required(VERSION 3.14)
-project(lc0001)
+include_directories(..)
 
-set(CMAKE_CXX_STANDARD 14)
-
-aux_source_directory(. SRC_LIST)
-
-add_executable(lc0001 ${SRC_LIST})
+add_executable(lc0001 Solution.cpp)

@@ -1,24 +1,21 @@
 //
 // Created by zhangyangshuo on 2019-05-09.
 //
+#include "Solution.h"
+#include <iostream>
 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> m;
-        vector<int> result;
-        for(int i=0; i<nums.size(); i++){
-            // not found the second one
-            if (m.find(nums[i])==m.end() ) {
-                // store the first one poisition into the second one's key
-                m[target - nums[i]] = i;
-            }else {
-                // found the second one
-                result.push_back(m[nums[i]]+1);
-                result.push_back(i+1);
-                break;
-            }
-        }
-        return result;
-    }
-};
+using namespace std;
+
+int main()
+{
+    Solution s;
+
+    std::vector<int> v1{2, 7, 11, 15};
+    cout<<( (s.twoSum(v1, 9) == std::vector<int>{0, 1}) ) << endl;
+
+    std::vector<int> v2{0, 4, 3, 0};
+    cout<<( (s.twoSum(v2, 0) == std::vector<int>{0, 3}) ) << endl;
+
+    std::vector<int> v3{-3, 4, 3, 90};
+    cout<<( (s.twoSum(v3, 0) == std::vector<int>{0, 2}) ) << endl;
+}
